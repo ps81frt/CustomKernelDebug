@@ -48,6 +48,7 @@ sudo make clean
 ```
 ```bash
 sudo make localmodconfig
+
 sudo ./scripts/config -e DEBUG_KERNEL
 sudo ./scripts/config -e DEBUG_INFO
 sudo ./scripts/config -e DEBUG_INFO_DWARF5
@@ -64,6 +65,9 @@ sudo ./scripts/config -e FUNCTION_TRACER
 sudo ./scripts/config --disable DEBUG_INFO_SPLIT
 sudo ./scripts/config --disable SYSTEM_TRUSTED_KEYS
 sudo ./scripts/config --disable SYSTEM_REVOCATION_KEYS
+
+sudo make olddefconfig
+
 ```
 
 ### Compilation et récupération des paramètre du noyau courant avec ajout des options
