@@ -47,6 +47,7 @@ sudo apt install -y build-essential bc bison flex libssl-dev libelf-dev dwarves 
 sudo make clean
 ```
 ```bash
+## Ajout des options de debug
 sudo make localmodconfig
 
 sudo ./scripts/config -e DEBUG_KERNEL
