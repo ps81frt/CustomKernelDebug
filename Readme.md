@@ -85,11 +85,14 @@ sudo grep -E "CONFIG_DEBUG_KERNEL|CONFIG_DEBUG_INFO|CONFIG_GDB_SCRIPTS|CONFIG_FR
 sudo vim Makefile
 ```
 
-# ajouter le nom de version voulù ici -cyber-debug
+### ajouter le nom de version voulù ici -cyber-debug
 
   * EXTRAVERSION =-cyber-debug
-
-    
+#### ou
+```bash
+make LOCALVERSION="-cyber-debug"
+```
+## Finalisation    
 ```bash
 sudo make -j$(nproc) bindeb-pkg
 ```
